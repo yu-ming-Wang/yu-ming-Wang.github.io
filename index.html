@@ -12,7 +12,7 @@
   padding: 0 10px;
   line-height: 1.6;
   color: #f0f8ff;
-  background-color: #00BFFF;
+  background-color: #2358FF;
 }
     nav {
       border-bottom: 1px solid #4c5c68;
@@ -30,9 +30,11 @@
     }
     h1 {
   margin-bottom: 5px;
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5em;
-  color: #2c3e50;
+  font-family: 'Arial Black', Gadget, sans-serif;
+  font-size: 3.5em;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: -1px;
 }
     section {
       margin-bottom: 40px;
@@ -93,16 +95,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Yuming (Jonathan) Wang</h1>
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 2px solid #000;">
+    <div style="font-family: 'Arial Black', sans-serif; font-size: 1.6em; color: #fff; letter-spacing: -1px;">
+      Domain<span style="color: #000">Name</span>
+    </div>
+    <nav style="font-size: 0.95em;">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="resume/yuming_wang_resume.pdf">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <h1 style="margin-top: 40px;">Yuming (Jonathan) Wang</h1>
   <img src="images/profile.jpg" alt="Yuming Wang" class="profile-pic">
   <p>Master’s student in CS @ NYU | Dual B.S. in CS & Quantitative Finance | Aspiring Quant Developer</p>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="resume/yuming_wang_resume.pdf">Resume</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  
 
   <section id="about">
   <h2>About Me</h2>
