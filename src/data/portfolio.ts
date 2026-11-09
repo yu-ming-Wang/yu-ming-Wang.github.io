@@ -1,0 +1,51 @@
+// Edit your profile and project descriptions here. Add a repository URL when available.
+export const profile = {
+  name: 'Yuming Wang',
+  role: 'Quant Developer',
+  email: 'yw8988@nyu.edu',
+  github: 'https://github.com/yu-ming-Wang',
+  linkedin: 'https://www.linkedin.com/in/yuming-wang-984b42152/',
+  resume: '/resume/yuming_wang_resume.pdf',
+  education: 'Master’s student in Computer Science at NYU',
+  background: 'Dual background in Computer Science & Quantitative Finance',
+  intro: 'I build at the intersection of systems, markets, and machine learning. My focus is on fast software, thoughtful models, and the data that connects them.',
+};
+
+export const projects = [
+  {
+    slug: 'hft',
+    number: '01',
+    category: 'Systems engineering',
+    title: 'High-Frequency Trading Matching Engine',
+    shortTitle: 'Matching engine',
+    summary: 'Exploring the systems behind electronic trading through a custom C++ matching engine.',
+    tags: ['C++', 'Trading systems'],
+    overview: 'A custom matching engine built in C++, drawing on my interest in high-frequency trading and performance-sensitive systems.',
+    context: 'My systems work includes multithreaded simulators and performance optimization down to the cache line. This project is part of that broader exploration of how engineering decisions shape trading infrastructure.',
+    repository: '',
+  },
+  {
+    slug: 'ppo-trader',
+    number: '02',
+    category: 'Machine learning',
+    title: 'PPO Reinforcement Learning Trading Bot',
+    shortTitle: 'Learning to trade',
+    summary: 'Investigating reinforcement learning for trading with Proximal Policy Optimization in Python.',
+    tags: ['Python', 'PPO', 'Reinforcement learning'],
+    overview: 'A Python trading bot project exploring Proximal Policy Optimization (PPO), a reinforcement learning approach for learning policies through interaction with an environment.',
+    context: 'This work connects my interests in machine learning and quantitative finance. The project focuses on exploring learning-based approaches to trading; no performance claims or backtest results are published here.',
+    repository: '',
+  },
+  {
+    slug: 'etf-db',
+    number: '03',
+    category: 'Data engineering',
+    title: 'ETF Data Analysis & SQL Pipeline',
+    shortTitle: 'From data to insight',
+    summary: 'Connecting Python analysis and SQLite storage to organize ETF data for research.',
+    tags: ['Python', 'SQLite', 'Financial data'],
+    overview: 'An ETF data analysis project combining Python and SQLite, with a focus on organizing financial data for analysis.',
+    context: 'Reliable data underpins useful research. My broader work includes cleaning and structuring datasets, maintaining financial databases, and preparing data for backtesting and strategy exploration.',
+    repository: '',
+  },
+];
