@@ -1,6 +1,6 @@
 # Yuming Wang · Portfolio
 
-個人作品集，使用 Astro、TypeScript 與原生 CSS，產出可部署到 GitHub Pages 的靜態網站。包含手機版排版、明暗主題、專案介紹頁、SEO metadata 和 404 頁面。
+個人作品集，使用 Astro、TypeScript 與原生 CSS，產出可部署到 GitHub Pages 的靜態網站。以 AI compiler 工程師為主軸，採固定深色科技風格，包含編譯流程示意、專案卡片、手機版排版、專案介紹頁、SEO metadata 和 404 頁面。
 
 ## 本機開發
 
@@ -31,7 +31,7 @@ npm run preview
 - `public/images/profile.jpg`：個人照片。
 - `public/resume/yuming_wang_resume.pdf`：履歷；原本的公開網址保持可用。
 
-教育與經歷沿用原站資料，發布前請確認仍符合現況。專案描述根據原站整理，未填入未提供的效能數字、成果或 repository 連結。
+目前職務、學歷與 LinkedIn 依提供的資料更新；自介集中於 `profile.about`。Quant model runtime、低延遲推論與交易系統表達為未來興趣方向。專案描述根據原站整理，未填入未提供的效能數字、成果或 repository 連結。履歷 PDF 仍是原有檔案，更新履歷時請另行替換。
 
 ## GitHub Pages 部署
 

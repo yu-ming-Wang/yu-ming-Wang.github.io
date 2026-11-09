@@ -1,14 +1,23 @@
 // Edit your profile and project descriptions here. Add a repository URL when available.
 export const profile = {
   name: 'Yuming Wang',
-  role: 'Quant Developer',
+  role: 'AI Compiler Software Engineer',
+  jobTitle: 'Engineer, AI Framework Software (ML Accelerator Compiler)',
+  company: 'Black Sesame Technologies',
   email: 'yw8988@nyu.edu',
   github: 'https://github.com/yu-ming-Wang',
-  linkedin: 'https://www.linkedin.com/in/yuming-wang-984b42152/',
+  linkedin: 'https://www.linkedin.com/in/yuming-wang-domainame/',
   resume: '/resume/yuming_wang_resume.pdf',
-  education: 'Master’s student in Computer Science at NYU',
+  education: 'M.S. in Computer Science · New York University',
   background: 'Dual background in Computer Science & Quantitative Finance',
-  intro: 'I build at the intersection of systems, markets, and machine learning. My focus is on fast software, thoughtful models, and the data that connects them.',
+  intro: 'I work on AI frameworks and ML accelerator compilers at Black Sesame Technologies, bringing models closer to hardware through compiler development and performance optimization.',
+  description: 'Yuming Wang — AI Compiler Software Engineer at Black Sesame Technologies. AI frameworks, ML accelerator compilers, high-performance C++, and efficient model execution.',
+  about: [
+    'Hi, I’m Yuming Wang, a Software Engineer at Black Sesame Technologies, where I work on AI framework and ML accelerator compiler development. I recently graduated with a Master’s degree in Computer Science from New York University.',
+    'My background bridges computer science and quantitative finance, giving me a strong foundation in software engineering and analytical thinking. My work focuses on compiler development, performance optimization, and efficient software for AI accelerators. I enjoy navigating large-scale codebases, understanding how systems behave, and solving low-level engineering challenges.',
+    'I’m passionate about high-performance C++ and continue to deepen my knowledge of compilers, computer architecture, and distributed systems. I’m especially interested in the boundary between model execution and hardware: how compilation, memory behavior, and runtime design influence inference latency and efficiency.',
+    'Looking ahead, I’d like to bring this experience to quantitative model runtimes, low-latency inference, and performance-critical trading systems. I’m interested in making research models practical to execute—from efficient inference paths to the low-latency infrastructure behind quantitative and high-frequency trading.',
+  ],
 };
 
 export const projects = [
