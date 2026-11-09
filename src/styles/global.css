@@ -118,7 +118,7 @@ h1, h2, h3 { font-family: var(--heading); font-weight: 500; line-height: 1.18; }
 .project-cta > span { color: var(--project-accent); }
 .about { display: grid; grid-template-columns: 310px 1fr; gap: 100px; border-top: 1px solid var(--line); }
 .portrait { margin-top: 26px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
-.portrait img { width: 100%; height: auto; filter: saturate(.65); background: var(--surface); }
+.portrait img { width: 100%; height: auto; background: var(--surface); }
 .portrait figcaption { display: flex; flex-direction: column; gap: 4px; padding: 17px; background: var(--surface); }
 .portrait figcaption strong { font-size: .9rem; font-weight: 500; }
 .portrait figcaption span { font-size: .68rem; color: var(--muted); }
