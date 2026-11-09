@@ -1,0 +1,15 @@
+---
+interface Props { variant: string }
+const { variant } = Astro.props;
+---
+<svg viewBox="0 0 420 340" aria-hidden="true" class="project-artwork">
+  {variant === 'hft' ? <>
+    <path fill="#ca6c50" d="M0 0h420v340H0z" />
+    <g fill="none" stroke="#f1dfc6" stroke-width="24"><path d="M80 270V120a60 60 0 0 1 120 0v150"/><path d="M220 270V120a60 60 0 0 1 120 0v150"/></g>
+    <path d="M0 215h420v32H0z" fill="#332f2b" /><circle cx="210" cy="231" r="46" fill="#ca6c50" /><circle cx="210" cy="231" r="20" fill="#f1dfc6" />
+  </> : variant === 'ppo-trader' ? <>
+    <path fill="#a9ac96" d="M0 0h420v340H0z" /><path d="M65 240 210 40l145 200Z" fill="#eae2d4" /><circle cx="210" cy="205" r="95" fill="#454c77" /><path d="M65 280 210 80l145 200Z" fill="none" stroke="#292d27" stroke-width="2" /><circle cx="210" cy="205" r="40" fill="#a9ac96" />
+  </> : <>
+    <path fill="#c7b4bd" d="M0 0h420v340H0z" /><g fill="#4a424c"><path d="M68 75h75v190H68zM173 75h75v190h-75zM278 75h75v190h-75z"/></g><path d="M38 116h344v35H38zm0 74h344v35H38z" fill="#e9e0d0" /><circle cx="315" cy="207" r="38" fill="#bc6045" />
+  </>}
+</svg>

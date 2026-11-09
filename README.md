@@ -1,6 +1,6 @@
 # Yuming Wang · Portfolio
 
-個人作品集，使用 Astro、TypeScript 與原生 CSS，產出可部署到 GitHub Pages 的靜態網站。以 AI compiler 工程師為主軸，採固定深色科技風格，包含編譯流程示意、專案卡片、手機版排版、專案介紹頁、SEO metadata 和 404 頁面。
+個人作品集，使用 Astro、TypeScript 與原生 CSS，產出可部署到 GitHub Pages 的靜態網站。以 AI compiler 工程師為主軸，採暖炭黑與陶橘的當代藝術風格，包含抽象幾何構圖、展覽式專案封面、手機版排版、專案介紹頁、SEO metadata 和 404 頁面。
 
 ## 本機開發
 

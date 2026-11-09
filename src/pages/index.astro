@@ -1,18 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import CompilerFlow from '../components/CompilerFlow.astro';
+import ArtComposition from '../components/ArtComposition.astro';
+import ProjectArtwork from '../components/ProjectArtwork.astro';
 import { profile, projects } from '../data/portfolio';
-const projectFlows = [
-  ['Order', 'Match', 'Execution'],
-  ['State', 'Policy', 'Action'],
-  ['Ingest', 'Query', 'Analysis'],
-];
 ---
 <Layout>
   <section class="hero wrap" aria-labelledby="hero-title">
     <div class="hero-copy">
-      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Yuming Wang / {profile.role}</p>
-      <h1 id="hero-title">AI, closer to<br /><span>the hardware.</span></h1>
+      <p class="eyebrow">Yuming Wang <span aria-hidden="true">/</span> Engineering & exploration</p>
+      <h1 id="hero-title">Precision,<br /><span>with perspective.</span></h1>
+      <p class="hero-role">{profile.role}</p>
       <p class="hero-intro">{profile.intro}</p>
       <div class="hero-links">
         <a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
@@ -20,8 +17,8 @@ const projectFlows = [
       </div>
       <div class="current-role"><span class="mini-label">Currently at</span><strong>{profile.company}</strong><span>{profile.jobTitle}</span></div>
     </div>
-    <CompilerFlow />
-    <div class="hero-footnote"><span>C++ <span aria-hidden="true">/</span> Compilers <span aria-hidden="true">/</span> AI accelerators</span><a href="#focus">Explore the stack <span aria-hidden="true">↓</span></a></div>
+    <ArtComposition />
+    <div class="hero-footnote"><span>C++ <span aria-hidden="true">/</span> Compilers <span aria-hidden="true">/</span> AI accelerators</span><a href="#focus">A closer look <span aria-hidden="true">↓</span></a></div>
   </section>
 
   <section id="focus" class="focus section wrap" aria-labelledby="focus-title">
@@ -36,9 +33,9 @@ const projectFlows = [
   <section id="projects" class="work section wrap" aria-labelledby="work-title">
     <div class="section-heading work-heading"><div><p class="eyebrow">02 / Selected projects</p><h2 id="work-title">Where ideas become systems.</h2></div><a class="text-link" href={profile.github}>GitHub profile <span aria-hidden="true">↗</span></a></div>
     <div class="project-grid">
-      {projects.map((project, index) => (
+      {projects.map(project => (
         <a class={`project-card project-${project.slug}`} href={`/projects/${project.slug}/`}>
-          <div class="project-visual" aria-hidden="true"><div class="visual-header"><span>{project.category}</span><span>/{project.number}</span></div><div class="visual-flow">{projectFlows[index].map((step, i) => <><span class="flow-block">{step}</span>{i < 2 && <span class="flow-connector">→</span>}</>)}</div><span class="visual-caption">Conceptual workflow</span></div>
+          <div class="project-visual"><ProjectArtwork variant={project.slug} /><span class="artwork-number" aria-hidden="true">{project.number}</span></div>
           <div class="project-card-body"><p class="eyebrow">Project {project.number}</p><h3>{project.title}</h3><p>{project.summary}</p><ul class="tags" aria-label="Technologies">{project.tags.map(tag => <li>{tag}</li>)}</ul><span class="project-cta">Explore project <span aria-hidden="true">↗</span></span></div>
         </a>
       ))}
